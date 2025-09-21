@@ -1,4 +1,4 @@
-const TMDB_API_KEY = "88b2f306014eef6c8bb0e9eb7959ee02"
+const TMDB_API_KEY = process.env.TMDB_API_KEY 
 const TMDB_BASE_URL = "https://api.themoviedb.org/3"
 const TMDB_IMAGE_BASE_URL = "https://image.tmdb.org/t/p"
 
@@ -82,7 +82,7 @@ export interface TMDBResponse<T> {
 // Helper function to build API URLs
 function buildApiUrl(endpoint: string, params: Record<string, string | number> = {}) {
   const url = new URL(`${TMDB_BASE_URL}${endpoint}`)
-  url.searchParams.append("api_key", TMDB_API_KEY)
+  url.searchParams.append("api_key", TMDB_API_KEY || "")
 
   Object.entries(params).forEach(([key, value]) => {
     url.searchParams.append(key, value.toString())
