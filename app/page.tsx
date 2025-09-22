@@ -73,6 +73,7 @@ export default function HomePage() {
             Your premium entertainment destination. Discover and stream the latest movies.
           </p>
           <p className="text-sm text-muted-foreground mt-4">© 2024 EpicScreen. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground mt-4">Designed by <a href="https://mrelvis.vercel.app/">MANZI RURANGIRWA Elvis</a></p>
         </div>
       </footer>
     </div>
