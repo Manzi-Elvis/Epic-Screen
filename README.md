@@ -13,3 +13,4 @@ It integrates with the **TMDB API** to deliver real-time movie data in a fast, r
   Install with:
   ```bash
   npm install -g pnpm
+  pnpm i
